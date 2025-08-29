@@ -1,0 +1,47 @@
+# =======================
+# Python / Flask backend
+# =======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Model files (big, binary)
+*.h5
+*.pkl
+*.joblib
+*.ckpt
+*.pth
+
+# Database files (if any)
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# =======================
+# Frontend
+# =======================
+# Node.js dependencies (if using npm for frontend)
+node_modules/
+npm-debug.log
+
+# Build/Dist folders (if you build frontend)
+dist/
+build/
+
+# =======================
+# System files
+# =======================
+.DS_Store
+Thumbs.db

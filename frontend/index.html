@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pneumonia Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-x-ray"></i> Pneumonia Detection from Chest X-ray</h1>
+
+    <input type="file" id="imageInput" accept="image/*" /><br />
+    <button type="button" id="predictBtn">Predict</button>
+    <button type="button" id="resetBtn">Reset</button>
+
+    <div id="result"></div>
+
+    <div id="spinner" style="display: none; margin-top: 20px;">
+      <div class="loader"></div>
+    </div>
+
+    <div class="image-wrapper">
+      <div>
+        <p><strong>Original X-ray</strong></p>
+        <img id="preview" src="#" alt="X-ray Preview" style="display:none;" />
+      </div>
+      <div>
+        <p><strong>Grad-CAM Heatmap</strong></p>
+        <img id="heatmap" src="#" alt="Grad-CAM Heatmap" style="display:none;" />
+      </div>
+    </div>
+
+    <div class="download-buttons" id="downloads" style="display: none;">
+      <a id="downloadHeatmap" download="heatmap.jpg">Download Heatmap</a>
+      <a id="downloadResult" download="result.txt">Download Result</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
